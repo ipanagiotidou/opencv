@@ -40,6 +40,7 @@
 //
 //M*/
 
+#include <iostream>
 #include "precomp.hpp"
 #include "fisheye.hpp"
 #include <limits>
