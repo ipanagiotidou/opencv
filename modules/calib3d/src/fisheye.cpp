@@ -465,6 +465,7 @@ void cv::fisheye::undistortPoints( InputArray distorted, OutputArray undistorted
 void cv::fisheye::initUndistortRectifyMap( InputArray K, InputArray D, InputArray R, InputArray P,
     const cv::Size& size, int m1type, OutputArray map1, OutputArray map2 )
 {
+    std::cout << "INSIDE initUndistortRectifyMap FUNCTION";
     CV_INSTRUMENT_REGION();
 
     CV_Assert( m1type == CV_16SC2 || m1type == CV_32F || m1type <=0 );
